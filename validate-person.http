@@ -5,7 +5,7 @@ Content-Type: application/json
 {
   "firstName": "Alessio",
   "lastName": "Canestrelli",
-  "email": "a.canestrelli@gmail.com"
+  "email": "alessio.canestrelli@gmail.com"
 }
 
 ### First name KO
@@ -15,7 +15,7 @@ Content-Type: application/json
 {
   "firstName": "Al",
   "lastName": "Canestrelli",
-  "email": "a.canestrelli@gmail.com"
+  "email": "alessio.canestrelli@email.com"
 }
 
 ### Last name KO
@@ -25,7 +25,7 @@ Content-Type: application/json
 {
   "firstName": "Alessio",
   "lastName": "Ca",
-  "email": "a.canestrelli@gmail.com"
+  "email": "alessio.canestrelli@email.com"
 }
 
 ### Email KO
@@ -35,7 +35,7 @@ Content-Type: application/json
 {
   "firstName": "Alessio",
   "lastName": "Canestrelli",
-  "email": "a.canestrelligmail.com"
+  "email": "alessio.canestrelliemail.com"
 }
 
 ### All KO
@@ -45,5 +45,5 @@ Content-Type: application/json
 {
   "firstName": "Al",
   "lastName": "Ca",
-  "email": "a.canestrelligmail.com"
+  "email": "alessio.canestrelliemail.com"
 }
