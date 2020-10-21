@@ -1,0 +1,49 @@
+### All OK
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "firstName": "Alessio",
+  "lastName": "Canestrelli",
+  "email": "a.canestrelli@gmail.com"
+}
+
+### First name KO
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "firstName": "Al",
+  "lastName": "Canestrelli",
+  "email": "a.canestrelli@gmail.com"
+}
+
+### Last name KO
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "firstName": "Alessio",
+  "lastName": "Ca",
+  "email": "a.canestrelli@gmail.com"
+}
+
+### Email KO
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "firstName": "Alessio",
+  "lastName": "Canestrelli",
+  "email": "a.canestrelligmail.com"
+}
+
+### All KO
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "firstName": "Al",
+  "lastName": "Ca",
+  "email": "a.canestrelligmail.com"
+}

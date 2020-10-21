@@ -1,0 +1,29 @@
+package KieRule;
+import it.solvingteam.example.drools.RuleEngineResponse
+import it.solvingteam.example.drools.Person
+
+rule firstName
+when
+    $r : RuleEngineResponse();
+    $p : Person();
+    String( length() < 3 ) from $p.getFirstName();
+then
+    $r.getErrors().add("First name ["+$p.getFirstName()+"] must be longer than 3 characters");
+end
+
+rule lastName
+when
+    $r : RuleEngineResponse();
+    $p : Person();
+    String( length() < 3 ) from $p.getLastName();
+then
+    $r.getErrors().add("Last name ["+$p.getLastName()+"] must be longer than 3 characters");
+end
+
+rule email
+when
+    $r : RuleEngineResponse();
+    $p : Person(email not matches "^([\\w-\\.]+){1,64}@([\\w&&[^_]]+){2,255}.[a-z]{2,}$");
+then
+    $r.getErrors().add("Email ["+$p.getEmail()+"] must be a valid address");
+end
